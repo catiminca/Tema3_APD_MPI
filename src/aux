@@ -1,0 +1,31 @@
+// nrHashesContor++;
+            // if (nrHashesContor % 10 == 0) {
+            //     int msg = 4, nrHashesCurr = 10;
+            //     MPI_Send(&msg, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
+            //     MPI_Send(&nrHashesContor, 1, MPI_INT, 0, 3, MPI_COMM_WORLD);
+            //     for (int i = nrHashesContor - 10; i < nrHashesContor; i++) {
+            //         MPI_Send(fileToHash[wantFile][i].c_str(), HASH_SIZE, MPI_CHAR, 0, 3, MPI_COMM_WORLD);
+            //         std::cout << "Sending hash to tracker with index " << i << " and the totals are " << nrHashesContor << '\n';
+            //     }
+            // }
+
+
+            // int hashesRemained = sizeAllHashes % 10;
+        // if (hashesRemained > 0) {
+        //     int msg = 4;
+        //     MPI_Send(&msg, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
+        //     MPI_Send(&hashesRemained, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
+        //     for (int i = 0; i < sizeAllHashes - hashesRemained; i++) {
+        //         MPI_Send(fileToHash[wantFile][i].c_str(), HASH_SIZE, MPI_CHAR, 0, 0, MPI_COMM_WORLD);
+        //     }   
+        // }
+
+        //else if (msg == 4) {
+        //     int nrHashes;
+        //     MPI_Recv(&nrHashes, 1, MPI_INT, MPI_ANY_SOURCE, 3, MPI_COMM_WORLD, &status);
+        //     char hashes[HASH_SIZE + 1];
+        //     hashes[HASH_SIZE] = '\0';
+        //     for (int i = 0; i < nrHashes; i++) {
+        //         MPI_Recv(hashes, HASH_SIZE, MPI_CHAR, status.MPI_SOURCE, 3, MPI_COMM_WORLD, &status);
+        //     }
+        // }
